@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-proposals">
+        <item screen="proposals_Instrument.browse" caption="mainMsg://menu_config.proposals_Instrument.browse"/>
+        <item screen="proposals_Proposal.browse" caption="mainMsg://menu_config.proposals_Proposal.browse"/>
+        <item screen="instrument2_InstrumentTwoData.browse"
+              caption="mainMsg://menu_config.instrument2_InstrumentTwoData.browse"/>
+        <item screen="instrument1_InstrumentOneProposalData.browse"
+              caption="mainMsg://menu_config.instrument1_InstrumentOneProposalData.browse"/>
+    </menu>
+    <menu id="administration">
+        <item id="sec$User.browse"/>
+        <item id="sec$Group.browse"/>
+        <item id="sec$Role.browse"/>
+        <separator/>
+        <item id="sys$Category.browse"/>
+        <item id="sec$UserSessionEntity.browse"/>
+        <item id="sys$LockInfo.browse"/>
+        <item id="sys$FileDescriptor.browse"/>
+        <item id="sys$ScheduledTask.browse"/>
+        <item id="entityRestore"/>
+        <item id="entityInspector.browse"/>
+        <item id="appProperties"/>
+        <item id="jmxConsole"/>
+        <separator/>
+        <item id="entityLog"/>
+        <item id="sec$SessionLogEntry.browse"/>
+        <item id="sys$SendingMessage.browse"/>
+        <item id="serverLog"/>
+        <item id="performanceStatistics"/>
+    </menu>
+    <menu id="help">
+        <item id="aboutWindow" openType="DIALOG"/>
+        <item class="com.haulmont.cuba.web.app.domain.DomainProvider" id="printDomain"/>
+        <separator/>
+        <item id="settings"/>
+    </menu>
+</menu-config>
